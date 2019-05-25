@@ -1,0 +1,15 @@
+.product-card {
+  width: 15%;
+  float: left;
+  position: relative;
+  text-align: center;
+
+}
+
+.product-card img {
+  max-width: 100%;
+}
+
+mat-card {
+  padding: 10px;
+}
