@@ -1,12 +1,25 @@
 <div class="menu-header">
-  <button mat-button [routerLink]="['/']" >Home</button>
-  <button mat-button [routerLink]="['/products', 'men']" >Men</button>
-  <button mat-button [routerLink]="['/products', 'women']" >Women</button>
-  <button mat-button [routerLink]="['/products', 'supplements']" >Supplements</button>
-  <button mat-button [routerLink]="['/products', 'accessories']" >Accessories</button>
-  <button mat-button [routerLink]="['/adminPage']" >Admin</button>
-
+  <div class="menu-header">
+    <button mat-button [routerLink]="['/']" >Home</button>
+    <button mat-button [routerLink]="['/products', 'men']" >Men</button>
+    <button mat-button [routerLink]="['/products', 'women']" >Women</button>
+    <button mat-button [routerLink]="['/products', 'supplements']" >Supplements</button>
+    <button mat-button [routerLink]="['/products', 'accessories']" >Accessories</button>
+    <button mat-button [routerLink]="['/adminPage']" >Admin</button>
+  </div>
+  <div class="right-icons">
+    <button mat-button [routerLink]="'/shoppingCart'">
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
+    <button mat-button [routerLink]="'/accountPage'">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </div>
 </div>
+
+
+
+
 
 
 

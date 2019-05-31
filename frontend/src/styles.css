@@ -10,6 +10,8 @@
 body {
   background-color: var(--white-off)
 }
+
+/*TODO: Check why it hovers the form*/
 .mat-figure:hover {
   background: rgba(0,0,0,0.2);
 }

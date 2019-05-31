@@ -7,15 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminPageComponent implements OnInit {
 
-  pageCategory: null;
+  pageCategory: 'products' | 'users' | 'others';
+  products: {};
 
   constructor() { }
 
   ngOnInit() {
+    this.pageCategory = 'products';
   }
 
   setPageCategory(value) {
-    this.pageCategory == value;
+    this.pageCategory = value;
     console.log(this.pageCategory);
   }
 

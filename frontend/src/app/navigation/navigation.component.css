@@ -1,5 +1,11 @@
 .menu-header {
   display: flex;
+}
+
+.menu-links {
   justify-content: center;
-  margin-bottom: 40px;
+}
+
+.right-icons {
+  margin-left: auto;
 }

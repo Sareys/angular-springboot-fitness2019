@@ -1,0 +1,87 @@
+.product {
+  margin-top: 70px;
+  margin-right: 100px;
+  margin-left: 100px;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+}
+
+.left-part {
+  padding-right: 45px;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.right-part {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.prod-name {
+  margin-bottom: 30px;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hr-medium {
+  margin: 35px 20px 10px 20px;
+  border-color: #000;
+}
+
+.button-container {
+  margin: 35px auto;
+}
+
+.size-button {
+  border: 1px solid;
+  background: none;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.size-button:hover {
+  background-color: #d7d7d7;
+}
+
+.prod-description {
+  margin-top: 35px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.prod-price {
+  color: red;
+  font-family: 'ITC Conduit', sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+}
+
+.add-cart-button {
+  width: 100%;
+  padding: 13px 20px;
+  background: red;
+  border: 0;
+  color: white;
+  margin: 0 10px;
+}
+
+.add-cart-button:hover {
+  background: #c60000;
+}
+
+.out-of-stock {
+  width: 100%;
+  padding: 13px 20px;
+  background: #a8a8a8;
+  border: 0;
+  color: white;
+  margin: 0 10px;
+  pointer-events: none;
+}

@@ -1,4 +1,25 @@
-<p>
-  product-page works!
-  {{productId}}
-</p>
+<div class="product">
+  <div class="left-part ">
+    <img class="product-img" [src]="product.img">
+  </div>
+  <div class="right-part">
+    <h1 class="prod-name">{{product.name}}</h1>
+    <p class="prod-price">
+      <span class="price">{{product.price}}<span> €</span></span>
+    </p>
+    <hr class="hr-medium">
+    <div class="prod-size">
+      <div class="button-container">
+        <button *ngFor="let size of sizes" class="size-button" value="size">{{size}}</button>
+      </div>
+    </div>
+    <div>
+      <!--      Here put the ngif if the product is sold out or not-->
+      <!--      <button class="add-cart-button">Add To Cart</button>-->
+      <button class="out-of-stock">Out of Stock</button>
+    </div>
+    <div class="prod-description">
+      <p class="description">{{product.description}}</p>
+    </div>
+  </div>
+</div>

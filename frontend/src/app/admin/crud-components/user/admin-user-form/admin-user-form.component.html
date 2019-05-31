@@ -1,0 +1,41 @@
+<mat-toolbar>
+  <span>{{userService.form.controls['$key'].value ? "Modify User" : "Create User"}}</span>
+  <button class="close-button" mat-stroked-button (click)="onClose()">
+    <mat-icon>clear</mat-icon>
+  </button>
+</mat-toolbar>
+<form [formGroup]="userService.form" class="normal-form">
+  <mat-grid-list cols="2" rowHeight="300px">
+    <mat-grid-tile>
+      <div class="control-container">
+        <input type="hidden" formControlName="$key">
+        <mat-form-field>
+          <input formControlName="name" matInput placeholder="Name">
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="lastName" matInput placeholder="Last Name">
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="mail" matInput placeholder="Mail">
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="control-container">
+        <div class="add-bottom-padding">
+<!--          <mat-form-field>-->
+<!--            <mat-select formControlName="category" placeholder="Category"></mat-select>-->
+<!--            <mat-option>None</mat-option>-->
+<!--            <ng-container *ngFor="let category of categories">-->
+<!--              <mat-option value="{{category.id}}">{{category.name}}</mat-option>-->
+<!--            </ng-container>-->
+<!--          </mat-form-field>-->
+        </div>
+        <div class="button-row">
+          <button mat-raised-button color="primary" type="submit">Submit</button>
+          <button mat-raised-button color="warn">Clear</button>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>
