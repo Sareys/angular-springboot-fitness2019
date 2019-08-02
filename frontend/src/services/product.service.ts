@@ -8,40 +8,28 @@ import {FormGroup, FormControl} from "@angular/forms";
 export class ProductService {
   tiles: Tile[] = [
     {
-      text: 'One',
+      text: 'Men',
       cols: 2,
       rows: 2,
       class: 'one-tile'
     },
     {
-      text: 'Two',
+      text: 'Women',
       cols: 1,
       rows: 1,
       class: 'two-tile'
     },
     {
-      text: 'Three',
+      text: 'Supplements',
       cols: 1,
       rows: 2,
       class: 'three-tile'
     },
     {
-      text: 'Four',
+      text: 'Accessories',
       cols: 1,
       rows: 2,
       class: 'four-tile'
-    },
-    {
-      text: 'Five',
-      cols: 2,
-      rows: 1,
-      class: 'five-tile'
-    },
-    {
-      text: 'Six',
-      cols: 1,
-      rows: 1,
-      class: 'six-tile'
     }
   ];
 
@@ -58,7 +46,8 @@ export class ProductService {
     name:  new FormControl(''),
     price: new FormControl(''),
     description: new FormControl(''),
-    category: new FormControl('')
+    category: new FormControl(''),
+    subCategory: new FormControl('')
   });
 
   getProducts(){
@@ -420,12 +409,13 @@ export class ProductService {
   }
 
   getCategories() {
-    this.categories = ['menApparel', 'womenApparel', 'supplement', 'accessories'];
+    this.categories = ['Men Apparel', 'Women Apparel', 'Supplement', 'Accessories'];
     return this.categories;
   }
 
   getSubCategories() {
-    this.subCategories = ['jacket', 'pants', 'shoes'];
+    this.subCategories = ['Upper', 'Lower', 'Shoes'];
+    return this.subCategories;
   }
 
   createProduct(){

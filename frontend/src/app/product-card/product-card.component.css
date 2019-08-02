@@ -1,15 +1,18 @@
 .product-card {
-  width: 15%;
+  width: 16%;
   float: left;
   position: relative;
   text-align: center;
+  border: 0;
+  box-shadow: transparent;
 
 }
 
 .product-card img {
-  max-width: 100%;
 }
 
 mat-card {
+  margin: 20px;
   padding: 10px;
+  border: 0;
 }

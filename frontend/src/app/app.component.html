@@ -1,7 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="mat-app-background basic-container">
-  <app-navigation></app-navigation>
-  <router-outlet></router-outlet>
-  <app-shopping-cart></app-shopping-cart>
-  <app-footer></app-footer>
+  <mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened"  position="end">
+      Here's the cart HTML
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <app-navigation></app-navigation>
+      <router-outlet></router-outlet>
+      <app-shopping-cart></app-shopping-cart>
+      <app-footer></app-footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>

@@ -1,11 +1,13 @@
 <div class="menu-header">
-  <div class="menu-header">
-    <button mat-button [routerLink]="['/']" >Home</button>
-    <button mat-button [routerLink]="['/products', 'men']" >Men</button>
-    <button mat-button [routerLink]="['/products', 'women']" >Women</button>
-    <button mat-button [routerLink]="['/products', 'supplements']" >Supplements</button>
-    <button mat-button [routerLink]="['/products', 'accessories']" >Accessories</button>
-    <button mat-button [routerLink]="['/adminPage']" >Admin</button>
+  <div class="logo">
+    <a [routerLink]="['/']"><img src="../../assets/logo/logo.jpg" alt="logo" style="width: 170px; height: 100px"></a>
+  </div>
+  <div class="menu-links">
+    <a [routerLink]="['/products', 'men']">Men</a>
+    <a [routerLink]="['/products', 'women']">Women</a>
+    <a [routerLink]="['/products', 'supplements']">Supplements</a>
+    <a [routerLink]="['/products', 'accessories']">Accessories</a>
+    <a [routerLink]="['/adminPage']">Admin</a>
   </div>
   <div class="right-icons">
     <button mat-button [routerLink]="'/shoppingCart'">
@@ -16,7 +18,6 @@
     </button>
   </div>
 </div>
-
 
 
 

@@ -11,13 +11,16 @@ export class AdminProductFormComponent implements OnInit {
 
   categories: any;
 
+  subCategories: any;
+
   constructor(private prodService: ProductService,
               private matDialogRef: MatDialogRef<AdminProductFormComponent>) {
   }
 
   ngOnInit() {
     this.categories = this.prodService.getCategories();
-    console.log(this.categories);
+    this.subCategories = this.prodService.getSubCategories();
+    console.log(this.subCategories)
   }
 
   onSubmit() {

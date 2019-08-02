@@ -34,6 +34,14 @@
             </mat-select>
           </mat-form-field>
         </div>
+        <div  class="subCategories">
+          <mat-select formControlName="subCategory" placeholder="SubCategory">
+            <mat-option>None</mat-option>
+            <ng-container *ngFor="let subCategory of subCategories">
+              <mat-option value="{{subCategory}}">{{subCategory}}</mat-option>
+            </ng-container>
+          </mat-select>
+        </div>
         <div class="button-row">
           <button mat-raised-button color="primary" type="submit" (click)="onSubmit()">Submit</button>
           <button mat-raised-button color="warn">Clear</button>
@@ -42,3 +50,35 @@
     </mat-grid-tile>
   </mat-grid-list>
 </form>
+
+<!--<div>-->
+
+<!--  <mat-grid-list cols="2">-->
+<!--    <mat-grid-tile class="grid-positioning">-->
+<!--      <div class="form-left-part">-->
+<!--        -->
+<!--      </div>-->
+<!--    </mat-grid-tile>-->
+<!--  </mat-grid-list>-->
+<!--</div>-->
+
+
+<!--<div class="row">-->
+
+<!--  <div class="column">-->
+<!--    <label>Name</label>-->
+<!--    <input>-->
+<!--    <label style="padding-top: 15px">Description</label>-->
+<!--    <input>-->
+<!--    <label style="padding-top: 15px">Price</label>-->
+<!--    <input>-->
+<!--  </div>-->
+<!--  <div class="column">-->
+<!--    <label>Name</label>-->
+<!--    <input>-->
+<!--    <label style="padding-top: 15px">Description</label>-->
+<!--    <input>-->
+<!--    <label style="padding-top: 15px">Price</label>-->
+<!--    <input>-->
+<!--  </div>-->
+<!--</div>-->

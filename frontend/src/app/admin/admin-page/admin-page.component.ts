@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminPageComponent implements OnInit {
 
-  pageCategory: 'products' | 'users' | 'others';
-  products: {};
+  pageCategory: 'products' | 'users' | 'sales';
 
   constructor() { }
 

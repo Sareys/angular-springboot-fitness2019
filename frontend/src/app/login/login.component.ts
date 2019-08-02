@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  createAccountBool: boolean;
+
   constructor() { }
 
   ngOnInit() {
+    this.createAccountBool = false;
+  }
+
+  createAccount(){
+    this.createAccountBool = true;
+    console.log()
   }
 
 }

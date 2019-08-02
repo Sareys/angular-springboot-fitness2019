@@ -1,5 +1,5 @@
 .one-tile {
-  background: url('https://source.unsplash.com/random/800x800') no-repeat center center;
+  background: url('http://cdn.shopify.com/s/files/1/0156/6146/articles/1518430951-2.jpg?v=1530176311') no-repeat center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,29 +8,20 @@
 
 
 .two-tile {
-  background: url('https://source.unsplash.com/random/600x401') no-repeat center center;
+  background: url('https://i.pinimg.com/originals/b8/ce/04/b8ce04291b570476aeb902cbdcf264d2.jpg') no-repeat center center;
 
 }
 
 .three-tile {
-  background: url('https://source.unsplash.com/random/600x402') no-repeat center center;
+  background: url('https://i.pinimg.com/originals/db/b2/4a/dbb24a726a9f3e2669573e3191334cae.jpg') no-repeat center center;
 
 }
 
 .four-tile {
-  background: url('https://source.unsplash.com/random/600x403') no-repeat center center;
+  background: url('https://www.calisthenics-101.co.uk/sites/default/files/chris-heria-weighted-vest.jpg') no-repeat center center;
 
 }
 
-.five-tile {
-  background: url('https://source.unsplash.com/random/800x804') no-repeat center center;
-
-}
-
-.six-tile {
-  background: url('https://source.unsplash.com/random/600x405') no-repeat center center;
-
-}
 
 .box-text {
   font-size: 4rem;

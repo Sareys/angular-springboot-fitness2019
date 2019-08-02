@@ -18,7 +18,7 @@ import {
   MatGridListModule,
   MatListModule,
   MatCardModule,
-  MatDialogModule, MatSelectModule, MatPaginatorModule, MatSortModule
+  MatDialogModule, MatSelectModule, MatPaginatorModule, MatSortModule, MatSidenavModule
 } from '@angular/material';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {HomeComponent} from './home/home.component';
@@ -33,6 +33,8 @@ import {MatInputModule} from "@angular/material";
 import {AdminUserFormComponent} from './admin/crud-components/user/admin-user-form/admin-user-form.component';
 import {MatToolbarModule} from "@angular/material";
 import {MatTableModule} from "@angular/material";
+import { AdminStockListComponent } from './admin/crud-components/stock/admin-stock-list/admin-stock-list.component';
+import { AdminStockFormComponent } from './admin/crud-components/stock/admin-stock-form/admin-stock-form.component';
 
 
 @NgModule({
@@ -52,7 +54,9 @@ import {MatTableModule} from "@angular/material";
     AdminPageComponent,
     ShoppingCartComponent,
     AdminProductFormComponent,
-    AdminUserFormComponent
+    AdminUserFormComponent,
+    AdminStockListComponent,
+    AdminStockFormComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +76,8 @@ import {MatTableModule} from "@angular/material";
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    FormsModule
+    FormsModule,
+    MatSidenavModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent],

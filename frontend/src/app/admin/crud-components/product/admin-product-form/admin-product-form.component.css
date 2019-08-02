@@ -17,11 +17,55 @@
 
 .button-row {
   margin: 8px;
+  justify-content: space-around;
 }
 
 .close-button {
+  margin: auto;
   width: 45px;
   min-width: 0px !important;
   height: 40px;
   padding: 0px !important;
+  float: right;
 }
+
+.subCategories {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+/*.row {*/
+/*  display: flex;*/
+/*}*/
+
+/*.column {*/
+/*  flex: 50%;*/
+/*  flex-direction: column;*/
+/*}*/
+
+/*.form-title {*/
+/*  width: 100%;*/
+/*  margin: 20px 20px 10px 20px;*/
+/*}*/
+
+/*!*.grid-positioning {*!*/
+/*!*  display: flex;*!*/
+/*!*  align-items: flex-end;*!*/
+/*!*}*!*/
+
+/*.horizontal-line {*/
+/*  margin: 35px 20px 10px 10px;*/
+/*  border-color: #000;*/
+/*}*/
+
+/*!*.form-left-part {*!*/
+/*!*  padding: 0;*!*/
+/*!*  display: flex;*!*/
+/*!*  width: 90%;*!*/
+/*!*  flex-direction: column;*!*/
+/*!*  justify-content: flex-start;*!*/
+/*!*}*!*/
